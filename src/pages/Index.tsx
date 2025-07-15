@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Separator } from '@/components/ui/separator';
 import Icon from '@/components/ui/icon';
+import ProductLoader from '@/components/ProductLoader';
 
 export default function Index() {
   const [isCalculatorOpen, setIsCalculatorOpen] = useState(false);
@@ -147,6 +148,13 @@ export default function Index() {
               </Badge>
             )}
           </div>
+        </div>
+      </section>
+
+      {/* 1C Integration Section */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <ProductLoader />
         </div>
       </section>
 
